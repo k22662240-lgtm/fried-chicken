@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="th" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ไก่ทองคำ Masterclass | คอร์สสอนสูตรไก่ทอดเงินล้าน กรอบสนั่น ไม่อมน้ำมัน สร้างอาชีพทำเงิน</title>
+  <meta name="description" content="เปลี่ยนสูตรไก่ทอดธรรมดา ให้เป็นไก่ทอดเงินล้าน คอร์สสอนทำไก่ทอดสูตรเด็ด กรอบนาน 6 ชั่วโมง ไม่อมน้ำมัน ฉ่ำนุ่มถึงเนื้อใน พร้อมวิธีเปิดร้านและคำนวณต้นทุน">
+  
+  <!-- Open Graph / SEO -->
+  <meta property="og:title" content="ไก่ทองคำ Masterclass | สูตรไก่ทอดเงินล้านสร้างอาชีพ">
+  <meta property="og:description" content="กรอบสนั่นนาน 6 ชม. ไม่อมน้ำมัน เนื้อในฉ่ำนุ่ม พร้อมสูตรซอสเคลือบ 4 สไตล์และวิธีเปิดร้านให้ได้กำไร">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=1200&auto=format&fit=crop&q=80">
+  <meta property="og:type" content="website">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              gold: '#F59E0B',
+              orange: '#EA580C',
+              dark: '#1C1917',
+              amber: '#78350F',
+              cream: '#FFFBEB'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="bg-stone-50 text-stone-800 antialiased selection:bg-amber-400 selection:text-stone-900">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-gradient-to-r from-amber-600 via-orange-600 to-amber-700 text-white text-xs sm:text-sm py-2 px-4 text-center font-medium shadow-inner flex items-center justify-center gap-2">
+    <span class="inline-block px-2 py-0.5 bg-yellow-400 text-stone-900 rounded-full font-bold text-xs uppercase tracking-wider animate-pulse">โปรโมชั่นพิเศษ</span>
+    <span>ฉลองเปิดสาขาใหม่! ลด 50% ทุกแพ็กเกจ รับสิทธิ์เฉพาะ 50 ท่านแรกของเดือนนี้เท่านั้น</span>
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav id="main-nav" class="sticky top-0 z-40 transition-all duration-300 py-3.5 px-4 sm:px-8">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center gap-2 group">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-amber-500 to-orange-500 flex items-center justify-center text-white shadow-lg shadow-orange-500/30 group-hover:scale-105 transition-transform">
+          <i data-lucide="flame" class="w-6 h-6 fill-current"></i>
+        </div>
+        <div class="leading-tight">
+          <span class="text-xl sm:text-2xl font-black heading-font text-stone-900 tracking-tight">ไก่ทองคำ<span class="text-orange-600">.</span></span>
+          <span class="block text-[10px] tracking-widest text-amber-700 font-semibold uppercase">Fried Chicken Masterclass</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <div class="hidden md:flex items-center gap-7 font-medium text-stone-700 text-sm">
+        <a href="#why-us" class="hover:text-orange-600 transition-colors">จุดเด่นคอร์ส</a>
+        <a href="#curriculum" class="hover:text-orange-600 transition-colors">เนื้อหาที่สอน</a>
+        <a href="#calculator" class="hover:text-orange-600 transition-colors flex items-center gap-1 text-amber-700 font-semibold">
+          <i data-lucide="calculator" class="w-4 h-4"></i> คำนวณกำไร
+        </a>
+        <a href="#testimonials" class="hover:text-orange-600 transition-colors">รีวิวลูกศิษย์</a>
+        <a href="#pricing" class="hover:text-orange-600 transition-colors">ราคาคอร์ส</a>
+        <a href="#faq" class="hover:text-orange-600 transition-colors">คำถามที่พบบ่อย</a>
+      </div>
+
+      <!-- Action Button -->
+      <div class="hidden md:flex items-center gap-3">
+        <a href="#pricing" class="btn-shimmer px-5 py-2.5 rounded-xl bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white font-semibold text-sm shadow-md shadow-orange-500/25 transition-all transform hover:-translate-y-0.5">
+          สมัครเรียนรับโปรโมชั่น
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg text-stone-700 hover:bg-stone-100 focus:outline-none">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="hidden md:hidden mt-3 p-4 bg-white rounded-2xl shadow-xl border border-stone-100 flex flex-col gap-3 font-medium">
+      <a href="#why-us" class="py-2 px-3 rounded-lg hover:bg-amber-50">จุดเด่นคอร์ส</a>
+      <a href="#curriculum" class="py-2 px-3 rounded-lg hover:bg-amber-50">เนื้อหาที่สอน</a>
+      <a href="#calculator" class="py-2 px-3 rounded-lg hover:bg-amber-50 text-amber-600 font-bold">เครื่องคำนวณกำไรเปิดร้าน</a>
+      <a href="#testimonials" class="py-2 px-3 rounded-lg hover:bg-amber-50">รีวิวลูกศิษย์</a>
+      <a href="#pricing" class="py-2 px-3 rounded-lg hover:bg-amber-50">ราคาคอร์ส</a>
+      <a href="#faq" class="py-2 px-3 rounded-lg hover:bg-amber-50">คำถามที่พบบ่อย</a>
+      <a href="#pricing" class="w-full text-center py-3 rounded-xl bg-gradient-to-r from-orange-500 to-amber-500 text-white font-semibold shadow-md">
+        สมัครเรียนรับส่วนลด 50%
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="relative pt-8 pb-16 md:pt-14 md:pb-24 overflow-hidden bg-gradient-to-b from-amber-50/70 via-stone-50 to-white">
+    <!-- Background Decor -->
+    <div class="absolute top-0 right-1/4 w-96 h-96 bg-amber-200/40 rounded-full blur-3xl pointer-events-none -z-10"></div>
+    <div class="absolute top-1/3 left-10 w-80 h-80 bg-orange-200/30 rounded-full blur-3xl pointer-events-none -z-10"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Column: Copywriting -->
+        <div class="lg:col-span-7 text-center lg:text-left space-y-6">
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-orange-100 border border-orange-200 text-orange-800 text-xs sm:text-sm font-semibold">
+            <i data-lucide="award" class="w-4 h-4 text-orange-600"></i>
+            <span>คอร์สอันดับ 1 สำหรับคนอยากมีร้านไก่ทอดเป็นของตัวเอง</span>
+          </div>
+
+          <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-stone-950 tracking-tight leading-[1.15]">
+            เปลี่ยนสูตรไก่ทอดธรรมดา <br>
+            เป็น <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 via-amber-600 to-yellow-600">"ไก่ทอดเงินล้าน"</span> 🍗✨
+          </h1>
+
+          <p class="text-base sm:text-lg text-stone-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+            คอร์สเรียนออนไลน์แบบจับมือทำ สอนสูตรลับไก่ทอดสตรีทฟู้ด & ไก่ทอดเกาหลี 
+            <strong class="text-stone-900 font-semibold">กรอบนาน 6 ชั่วโมง ไม่อมน้ำมัน เนื้อในฉ่ำนุ่ม</strong> 
+            พร้อมเทคนิคการคุมต้นทุน การเลือกซื้อวัตถุดิบ และแผนการตลาดเปิดร้านให้มียอดขายปังตั้งแต่วันแรก!
+          </p>
+
+          <!-- Key Highlights Bullet Points -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-sm text-stone-700 max-w-lg mx-auto lg:mx-0">
+            <div class="flex items-center gap-2">
+              <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-600 flex-shrink-0"></i>
+              <span>สูตรแป้งลับ กรอบสนั่นไม่ง้อสารเคมี</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-600 flex-shrink-0"></i>
+              <span>เทคนิคหมักน้ำดอง ฉ่ำเข้าเนื้อถึงกระดูก</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-600 flex-shrink-0"></i>
+              <span>สอนสูตรซอสเคลือบยอดฮิต 4 สไตล์</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-600 flex-shrink-0"></i>
+              <span>ตาราง Excel คำนวณกำไรต่อชิ้นให้พร้อม</span>
+            </div>
+          </div>
+
+          <!-- CTAs -->
+          <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+            <button class="btn-open-modal btn-shimmer w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-orange-500 via-amber-500 to-orange-600 text-white font-bold text-base shadow-xl shadow-orange-500/30 hover:scale-[1.02] transition-all flex items-center justify-center gap-2" data-package="pro">
+              <i data-lucide="zap" class="w-5 h-5"></i>
+              <span>ลงทะเบียนรับสิทธิ์ลด 50%</span>
+            </button>
+            <a href="#calculator" class="w-full sm:w-auto px-6 py-4 rounded-xl bg-white hover:bg-stone-100 text-stone-800 font-semibold text-base border border-stone-200 shadow-sm transition-all flex items-center justify-center gap-2">
+              <i data-lucide="calculator" class="w-5 h-5 text-amber-600"></i>
+              <span>ลองคำนวณกำไรเปิดร้าน</span>
+            </a>
+          </div>
+
+          <!-- Trust Badges -->
+          <div class="pt-6 border-t border-stone-200 flex flex-wrap items-center justify-center lg:justify-start gap-6 text-stone-500 text-xs">
+            <div class="flex items-center gap-2">
+              <div class="flex -space-x-2">
+                <img class="w-7 h-7 rounded-full border-2 border-white object-cover" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80" alt="Student">
+                <img class="w-7 h-7 rounded-full border-2 border-white object-cover" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&auto=format&fit=crop&q=80" alt="Student">
+                <img class="w-7 h-7 rounded-full border-2 border-white object-cover" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&auto=format&fit=crop&q=80" alt="Student">
+              </div>
+              <span class="font-medium text-stone-700">ลูกศิษย์กว่า 1,850+ คนทั่วประเทศ</span>
+            </div>
+            <div class="flex items-center gap-1 text-amber-500 font-bold">
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <span class="text-stone-800 ml-1">4.9 / 5.0 (รีวิวผู้เรียนจริง)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Visual Hero Element -->
+        <div class="lg:col-span-5 relative">
+          <!-- Main Hero Image Frame -->
+          <div class="relative mx-auto max-w-md lg:max-w-none">
+            <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-stone-900 group">
+              <img 
+                src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=900&auto=format&fit=crop&q=80" 
+                alt="ไก่ทอดสีทองกรอบอร่าม" 
+                class="w-full h-[420px] object-cover group-hover:scale-105 transition-transform duration-700"
+              >
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+              <div class="absolute bottom-6 left-6 right-6 text-white">
+                <span class="px-3 py-1 rounded-full bg-amber-500/90 text-stone-950 font-bold text-xs uppercase tracking-wider mb-2 inline-block">
+                  สูตรสำเร็จพร้อมขาย
+                </span>
+                <p class="font-bold text-lg heading-font">กรอบสนั่นนาน 6 ชม. แม้โดนลมหรือใส่กล่องส่งเดลิเวอรี่</p>
+              </div>
+            </div>
+
+            <!-- Floating Badge 1: Crispy Time -->
+            <div class="absolute -top-4 -left-4 sm:-left-6 glass-card p-3 sm:p-4 rounded-2xl shadow-xl flex items-center gap-3 animate-float border border-amber-300">
+              <div class="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-700 flex items-center justify-center font-bold">
+                <i data-lucide="clock" class="w-6 h-6 text-amber-600"></i>
+              </div>
+              <div>
+                <div class="text-xs text-stone-500 font-medium">ความกรอบทนทาน</div>
+                <div class="text-base font-extrabold text-stone-900">การันตีกรอบนาน 6 ชม.</div>
+              </div>
+            </div>
+
+            <!-- Floating Badge 2: Non-Greasy -->
+            <div class="absolute -bottom-6 -right-4 sm:-right-6 glass-card p-3 sm:p-4 rounded-2xl shadow-xl flex items-center gap-3 animate-float-delayed border border-orange-300">
+              <div class="w-10 h-10 rounded-xl bg-orange-500/20 text-orange-700 flex items-center justify-center font-bold">
+                <i data-lucide="droplets" class="w-6 h-6 text-orange-600"></i>
+              </div>
+              <div>
+                <div class="text-xs text-stone-500 font-medium">เทคนิคไล่น้ำมัน</div>
+                <div class="text-base font-extrabold text-stone-900">ไม่อมน้ำมัน 100%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Pain Points Section: ทำไมคนส่วนใหญ่ทอดไก่แล้วไม่ประสบความสำเร็จ -->
+  <section id="why-us" class="py-16 md:py-24 bg-white border-y border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-xs sm:text-sm font-bold tracking-widest uppercase text-orange-600 mb-2">แก้ปัญหาที่ต้นตอ</h2>
+        <p class="text-3xl sm:text-4xl font-extrabold text-stone-900 heading-font">
+          คุณเคยเจอปัญหาเหล่านี้ตอนทอดไก่ไหม?
+        </p>
+        <p class="mt-4 text-stone-600 text-base">
+          หลายคนลองผิดลองถูกเสียเงินค่าน้ำมันและเนื้อไก่ไปนับหมื่น แต่ยังไม่ได้ไก่ทอดที่ลูกค้าอยากซื้อซ้ำ เพราะขาดเทคนิคที่ถูกต้อง
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Problem Card 1 -->
+        <div class="p-6 rounded-2xl bg-stone-50 border border-stone-200 hover:border-amber-400 transition-all shadow-sm">
+          <div class="w-12 h-12 rounded-xl bg-rose-100 text-rose-600 flex items-center justify-center mb-4">
+            <i data-lucide="cloud-rain" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-stone-900 mb-2">ทอดเสร็จแป๊บเดียวแป้งนิ่ม</h3>
+          <p class="text-sm text-stone-600 leading-relaxed">
+            ตอนขึ้นจากกระทะดูดี แต่พอวางทิ้งไว้ 20 นาที หรือใส่กล่องส่งเดลิเวอรี่ แป้งเหี่ยว ไอน้ำขัง แฉะจนหมดความน่ากิน
+          </p>
+        </div>
+
+        <!-- Problem Card 2 -->
+        <div class="p-6 rounded-2xl bg-stone-50 border border-stone-200 hover:border-amber-400 transition-all shadow-sm">
+          <div class="w-12 h-12 rounded-xl bg-rose-100 text-rose-600 flex items-center justify-center mb-4">
+            <i data-lucide="shield-alert" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-stone-900 mb-2">แป้งแข็งกระด้าง เคี้ยวเจ็บฟัน</h3>
+          <p class="text-sm text-stone-600 leading-relaxed">
+            ผสมแป้งผิดสัดส่วน ทอดออกมาแล้วไม่ใช่ "กรอบฟูโปร่ง" แต่กลายเป็นแป้งแข็งหนาเตอะ กัดแล้วบาดเหงือก
+          </p>
+        </div>
+
+        <!-- Problem Card 3 -->
+        <div class="p-6 rounded-2xl bg-stone-50 border border-stone-200 hover:border-amber-400 transition-all shadow-sm">
+          <div class="w-12 h-12 rounded-xl bg-rose-100 text-rose-600 flex items-center justify-center mb-4">
+            <i data-lucide="droplet" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-stone-900 mb-2">อมน้ำมันเยิ้ม กลิ่นหืน</h3>
+          <p class="text-sm text-stone-600 leading-relaxed">
+            คุมอุณหภูมิไฟไม่เป็น ไก่ดูดน้ำมันเข้าไปในเนื้อ กัดเข้าไปมีแต่น้ำมัน เลี่ยน ทานชิ้นเดียวก็ไม่อยากทานต่อ
+          </p>
+        </div>
+
+        <!-- Problem Card 4 -->
+        <div class="p-6 rounded-2xl bg-stone-50 border border-stone-200 hover:border-amber-400 transition-all shadow-sm">
+          <div class="w-12 h-12 rounded-xl bg-rose-100 text-rose-600 flex items-center justify-center mb-4">
+            <i data-lucide="alert-triangle" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-stone-900 mb-2">ข้างนอกไหม้ ข้างในไม่สุก</h3>
+          <p class="text-sm text-stone-600 leading-relaxed">
+            ผิวด้านนอกสีเข้มดำเร็ว แต่เนื้อติดกระดูกยังมีเลือดซิบ คุมการกระจายความร้อนไม่สม่ำเสมอ ลูกค้าเคลม
+          </p>
+        </div>
+      </div>
+
+      <!-- Solution Banner -->
+      <div class="mt-12 p-8 rounded-3xl bg-gradient-to-r from-amber-500 via-orange-500 to-amber-600 text-white shadow-xl flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="space-y-2 text-center md:text-left">
+          <h3 class="text-2xl font-bold heading-font">ไม่ต้องเสียเวลาลองผิดลองถูกอีกต่อไป!</h3>
+          <p class="text-amber-100 text-sm md:text-base max-w-xl">
+            เรานำประสบการณ์ขายจริงและทดลองสูตรกว่า 7 ปี มาสรุปเป็นสูตรและขั้นตอนเป๊ะๆ ให้คุณทำตามได้ทันที แม้ไม่เคยเข้าครัวมาก่อน
+          </p>
+        </div>
+        <button class="btn-open-modal px-8 py-3.5 rounded-xl bg-stone-900 hover:bg-stone-800 text-white font-bold text-sm shadow-lg whitespace-nowrap" data-package="pro">
+          ดูเนื้อหาหลักสูตรทั้งหมด
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Curriculum Section: สิ่งที่คุณจะได้เรียนรู้ 5 โมดูล -->
+  <section id="curriculum" class="py-16 md:py-24 bg-stone-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs sm:text-sm font-bold tracking-widest uppercase text-amber-700 mb-2 block">หลักสูตรเข้มข้นมืออาชีพ</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-stone-900 heading-font">
+          5 โมดูลสู่การเป็นเจ้าของร้านไก่ทอดเงินล้าน
+        </h2>
+        <p class="mt-4 text-stone-600 text-base">
+          เนื้อหาวิดีโอความคมชัดสูง Full HD + ตำราสูตร PDF สามารถเรียนซ้ำได้ตลอดชีพไม่มีวันหมดอายุ
+        </p>
+      </div>
+
+      <div class="space-y-6 max-w-4xl mx-auto">
+        
+        <!-- Module 1 -->
+        <div class="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-stone-200 hover:shadow-md transition-shadow">
+          <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-800 flex items-center justify-center font-black text-xl heading-font flex-shrink-0">
+                01
+              </div>
+              <div>
+                <span class="text-xs font-semibold text-orange-600 uppercase tracking-wider">Module 1 : Preparation & Brining</span>
+                <h3 class="text-lg sm:text-xl font-bold text-stone-900">ศาสตร์การคัดเลือกไก่ และการหมักน้ำดองให้เนื้อฉ่ำเด้ง</h3>
+              </div>
+            </div>
+            <span class="px-3 py-1 bg-stone-100 text-stone-600 text-xs font-medium rounded-full">4 บทเรียน • 45 นาที</span>
+          </div>
+          <div class="mt-4 pt-4 border-t border-stone-100 grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-stone-600">
+            <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-600"></i> การเลือกส่วนน่อง สะโพก ปีก ให้ได้ขนาดมาตรฐาน</div>
+            <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-600"></i> สูตรน้ำดองเกลือและเครื่องเทศ (Brining Solution) ลับเฉพาะ</div>
+            <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-600"></i> วิธีดับกลิ่นคาวไก่ให้หอมสะอาด เนื้อฉ่ำน้ำไม่แห้ง</div>
+            <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-600"></i> เทคนิคการกรีดชิ้นไก่ให้สุกทั่วถึงไม่มีเลือดค้าง</div>
+          </div>
+        </div>
+
+        <!-- Module 2 -->
+        <div class="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-stone-200 hover:shadow-md transition-shadow">
+          <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-2xl bg-orange-100 text-orange-800 flex items-center justify-center font-black text-xl heading-font flex-shrink-0">
+                02
+              </div>
+              <div>
+                <span class="text-xs font-semibold text-orange-600 uppercase tracking-wider">Module 2 : Secret Crispy Batter</span>
+                <h3 class="text-lg sm:text-xl font-bold text-stone-900">สูตรแป้งผสมพิเศษ กรอบฟูโปร่ง นาน 6 ชั่วโมง</h3>
+              </div>
+            </div>
+            <span class="px-3 py-1 bg-stone-100 text-stone-600 text-xs font-medium rounded-full">5 บทเรียน • 60 นาที</span>
+          </div>
+          <div class="mt-4 pt-4 border-t border-stone-100 grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-stone-600">
+            <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-orange-600"></i> สัดส่วนแป้ง 3 ชนิดที่ผสมผสานความกรอบระดับไมโคร</div>
+            <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-orange-600"></i> เทคนิคชุบแห้ง-ชุบเปียก (Dredging) ให้ได้เกล็ดสวยงาม</div>
+            <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-orange-600"></i> สูตรแป้งไก่ทอดหาดใหญ่ VS สูตรไก่ทอดเกาหลีเคลือบซอส</div>
+            <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-orange-600"></i> การผสมแป้งล็อตใหญ่เพื่อเตรียมขายหน้าร้าน</div>
+          </div>
+        </div>
+
+        <!-- Module 3 -->
+        <div class="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-stone-200 hover:shadow-md transition-shadow">
+          <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-800 flex items-center justify-center font-black text-xl heading-font flex-shrink-0">
+                03
+              </div>
+              <div>
+                <span class="text-xs font-semibold text-amber-600 uppercase tracking-wider">Module 3 : Temperature & Double Frying</span>
+                <h3 class="text-lg sm:text-xl font-bold text-stone-900">เทคนิคการคุมไฟ อุณหภูมิน้ำมัน และการทอด 2 รอบ</h3>
+              </div>
+            </div>
+            <span class="px-3 py-1 bg-stone-100 text-stone-600 text-xs font-medium rounded-full">4 บทเรียน • 50 นาที</span>
+          </div>
+          <div class="mt-4 pt-4 border-t border-stone-100 grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-stone-600">
+            <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-600"></i> การเลือกชนิดน้ำมันสำหรับการพาณิชย์ ทนความร้อน ไม่เหม็นหืน</div>
+            <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-600"></i> การคุมอุณหภูมิ 160°C สุกนุ่ม และ 185°C ไล่น้ำมันให้กรอบกริ๊บ</div>
+            <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-600"></i> วิธีแก้ปัญหาน้ำมันดำ และการกรองน้ำมันให้ใช้ได้นานประหยัดต้นทุน</div>
+            <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-600"></i> เทคนิคการพักไก่บนตะแกรงระบายความชื้น</div>
+          </div>
+        </div>
+
+        <!-- Module 4 -->
+        <div class="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-stone-200 hover:shadow-md transition-shadow">
+          <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-2xl bg-rose-100 text-rose-800 flex items-center justify-center font-black text-xl heading-font flex-shrink-0">
+                04
+              </div>
+              <div>
+                <span class="text-xs font-semibold text-rose-600 uppercase tracking-wider">Module 4 : Signature Sauces & Glazes</span>
+                <h3 class="text-lg sm:text-xl font-bold text-stone-900">4 สูตรซอสและน้ำจิ้มเด็ด มัดใจลูกค้าให้ติดหนึบ</h3>
+              </div>
+            </div>
+            <span class="px-3 py-1 bg-stone-100 text-stone-600 text-xs font-medium rounded-full">4 บทเรียน • 40 นาที</span>
+          </div>
+          <div class="mt-4 pt-4 border-t border-stone-100 grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-stone-600">
+            <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-rose-600"></i> ซอสการ์ลิคซอยซอสสไตล์เกาหลี (Soy Garlic Glaze)</div>
+            <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-rose-600"></i> ซอสโคชูจังสไปซี่เผ็ดหวานกลมกล่อม (Korean Spicy Gochujang)</div>
+            <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-rose-600"></i> ดิปปิ้งชีสเยิ้มรสชาติเข้มข้นสไตล์คาเฟ่</div>
+            <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-rose-600"></i> น้ำจิ้มไก่สูตรเคี่ยวโบราณ เผ็ดหวานลงตัว</div>
+          </div>
+        </div>
+
+        <!-- Module 5 -->
+        <div class="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-stone-200 hover:shadow-md transition-shadow">
+          <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-800 flex items-center justify-center font-black text-xl heading-font flex-shrink-0">
+                05
+              </div>
+              <div>
+                <span class="text-xs font-semibold text-emerald-600 uppercase tracking-wider">Module 5 : Business & Profit Mastery</span>
+                <h3 class="text-lg sm:text-xl font-bold text-stone-900">การคำนวณต้นทุน บรรจุภัณฑ์ และการตลาดเปิดร้าน</h3>
+              </div>
+            </div>
+            <span class="px-3 py-1 bg-stone-100 text-stone-600 text-xs font-medium rounded-full">6 บทเรียน • 55 นาที</span>
+          </div>
+          <div class="mt-4 pt-4 border-t border-stone-100 grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-stone-600">
+            <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> การคิดต้นทุนต่อชิ้น ไก่ แป้ง น้ำมัน แก๊ส แพ็กเกจจิ้ง</div>
+            <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> แจกไฟล์ Excel สำเร็จรูปใส่ตัวเลขแล้วคำนวณกำไรทันที</div>
+            <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> การเลือกซื้ออุปกรณ์เริ่มต้นในงบประหยัด (หม้อทอด, เตาแก๊ส, ตะแกรง)</div>
+            <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> กลยุทธ์การตั้งราคาและการทำโปรโมชั่นเปิดร้านให้คนแชร์</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Profit Calculator Section -->
+  <section id="calculator" class="py-16 md:py-24 bg-gradient-to-br from-stone-900 via-stone-950 to-amber-950 text-white relative overflow-hidden">
+    <!-- Glowing background lights -->
+    <div class="absolute -top-40 -left-40 w-96 h-96 bg-orange-600/20 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-40 -right-40 w-96 h-96 bg-amber-500/20 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 text-xs font-semibold uppercase tracking-wider mb-3 border border-amber-500/30">
+          <i data-lucide="trending-up" class="w-4 h-4"></i> ประเมินรายได้จริง
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold heading-font text-white">
+          เครื่องคำนวณต้นทุน & กำไรเปิดร้านไก่ทอด
+        </h2>
+        <p class="mt-3 text-stone-300 text-sm sm:text-base">
+          ลองเลื่อนปรับจำนวนชิ้นที่คุณคาดว่าจะขายได้ต่อวัน แล้วดูผลลัพธ์กำไรสุทธิที่คุณสามารถสร้างได้ในแต่ละเดือน
+        </p>
+      </div>
+
+      <!-- Calculator Card -->
+      <div class="glass-card-dark rounded-3xl p-6 sm:p-10 shadow-2xl border border-amber-500/30">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <!-- Controls (Left) -->
+          <div class="lg:col-span-6 space-y-6">
+            <div>
+              <div class="flex justify-between items-center mb-2">
+                <label for="calc-pieces" class="font-bold text-stone-200 text-sm sm:text-base flex items-center gap-2">
+                  <i data-lucide="shopping-bag" class="w-4 h-4 text-amber-400"></i>
+                  จำนวนชิ้นที่ขายต่อวัน:
+                </label>
+                <span class="text-2xl font-black heading-font text-amber-400">
+                  <span id="calc-pieces-val">120</span> <span class="text-xs font-normal text-stone-300">ชิ้น/วัน</span>
+                </span>
+              </div>
+              <input 
+                id="calc-pieces" 
+                type="range" 
+                min="30" 
+                max="500" 
+                value="120" 
+                step="10" 
+                class="w-full h-3 bg-stone-700 rounded-lg appearance-none cursor-pointer"
+              >
+              <div class="flex justify-between text-xs text-stone-400 mt-1">
+                <span>30 ชิ้น (เริ่มต้น)</span>
+                <span>200 ชิ้น (ทำเลดี)</span>
+                <span>500 ชิ้น (ร้านดัง)</span>
+              </div>
+            </div>
+
+            <div>
+              <label for="calc-price" class="font-bold text-stone-200 text-sm sm:text-base flex items-center gap-2 mb-2">
+                <i data-lucide="tag" class="w-4 h-4 text-amber-400"></i>
+                ราคาขายเฉลี่ยต่อชิ้น (บาท):
+              </label>
+              <div class="relative">
+                <input 
+                  id="calc-price" 
+                  type="number" 
+                  min="20" 
+                  max="120" 
+                  value="35" 
+                  class="w-full px-4 py-3 bg-stone-800 border border-stone-700 rounded-xl text-white font-bold focus:outline-none focus:border-amber-400 pl-10"
+                >
+                <span class="absolute left-3.5 top-3.5 text-stone-400 text-sm font-semibold">฿</span>
+              </div>
+              <p class="text-xs text-stone-400 mt-1.5">*ราคาตลาดเฉลี่ยสำหรับชิ้นน่อง/สะโพก หรือชุดเซ็ตไก่ทอดสตรีทฟู้ด</p>
+            </div>
+
+            <div class="p-4 rounded-xl bg-stone-800/80 border border-stone-700 text-xs text-stone-300 space-y-1">
+              <p class="font-semibold text-amber-300">💡 ข้อมูลสมมติฐานคำนวณ:</p>
+              <p>• คำนวณเปิดร้านเดือนละ 26 วัน (หยุดพักสัปดาห์ละ 1 วัน)</p>
+              <p>• ต้นทุนผันแปรเฉลี่ย (ไก่, แป้ง, น้ำมัน, ซอส, แก๊ส, กล่อง) อยู่ที่ประมาณ 48%</p>
+            </div>
+          </div>
+
+          <!-- Results Summary (Right) -->
+          <div class="lg:col-span-6 bg-gradient-to-b from-stone-800 to-stone-900 rounded-2xl p-6 sm:p-8 border border-stone-700/80 space-y-5">
+            
+            <div class="flex justify-between items-center pb-3 border-b border-stone-700">
+              <span class="text-stone-300 text-sm">ยอดขายรวมต่อวัน:</span>
+              <span id="res-daily-rev" class="text-lg font-bold text-stone-100">฿4,200</span>
+            </div>
+
+            <div class="flex justify-between items-center pb-3 border-b border-stone-700">
+              <span class="text-stone-300 text-sm">ยอดขายรวมต่อเดือน (26 วัน):</span>
+              <span id="res-monthly-rev" class="text-lg font-bold text-stone-100">฿109,200</span>
+            </div>
+
+            <div class="flex justify-between items-center pb-3 border-b border-stone-700">
+              <span class="text-stone-400 text-sm">ประมาณการต้นทุนรวมต่อเดือน:</span>
+              <span id="res-cost" class="text-sm font-semibold text-rose-400">฿52,416</span>
+            </div>
+
+            <!-- Net Profit Big Box -->
+            <div class="pt-2">
+              <span class="text-xs uppercase tracking-wider text-amber-300 font-bold block mb-1">
+                กำไรสุทธิโดยประมาณของคุณ (Net Profit/เดือน)
+              </span>
+              <div class="text-3xl sm:text-4xl font-extrabold heading-font text-emerald-400 flex items-baseline gap-2">
+                <span id="res-net-profit">฿56,784</span>
+                <span class="text-xs font-normal text-stone-400">/ เดือน</span>
+              </div>
+              <p class="text-xs text-emerald-300/80 mt-1">
+                🚀 คิดเป็นกำไรต่อปีสูงถึงกว่า <strong>฿680,000+</strong> จากการทอดขายแค่วันละ 120 ชิ้น!
+              </p>
+            </div>
+
+            <button class="btn-open-modal btn-shimmer w-full py-3.5 rounded-xl bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white font-bold text-sm shadow-lg shadow-orange-500/25 transition-transform hover:scale-[1.01]" data-package="pro">
+              เริ่มเรียนสูตรนี้เพื่อสร้างอาชีพทันที
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section: รีวิวจากนักเรียนจริง -->
+  <section id="testimonials" class="py-16 md:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs sm:text-sm font-bold tracking-widest uppercase text-orange-600 mb-2 block">เรื่องจริงจากผู้เรียน</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-stone-900 heading-font">
+          เสียงตอบรับจากคนที่นำสูตรไปสร้างรายได้จริง
+        </h2>
+        <p class="mt-4 text-stone-600 text-base">
+          จากคนไม่มีพื้นฐาน สู่เจ้าของร้านที่มีลูกค้าประจำรอต่อคิวทุกวัน
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Review 1 -->
+        <div class="bg-stone-50 rounded-2xl p-6 sm:p-8 border border-stone-200 relative flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-400 mb-3">
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            </div>
+            <p class="text-stone-700 text-sm leading-relaxed italic">
+              "ตอนแรกตกงานเคว้งคว้างมาก เลยตัดสินใจลงเรียนคอร์สนี้ อาจารย์สอนเข้าใจง่ายมาก ไม่มีกั๊กสูตรเลย เปิดร้านหน้าโรงเรียนได้ 3 เดือน ตอนนี้ขายได้วันละ 250 ชิ้น ปลดหนี้บัตรเครดิตได้หมดแล้ว ขอบคุณอาจารย์มากๆ ค่ะ"
+            </p>
+          </div>
+          <div class="mt-6 pt-6 border-t border-stone-200 flex items-center gap-3">
+            <img class="w-12 h-12 rounded-full object-cover border-2 border-amber-400" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&auto=format&fit=crop&q=80" alt="คุณแนน">
+            <div>
+              <h4 class="font-bold text-stone-900 text-sm">คุณแนน ภัทรวดี</h4>
+              <p class="text-xs text-stone-500">เจ้าของร้าน 'ไก่ทอดน้องแนน' จ.ชลบุรี</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="bg-stone-50 rounded-2xl p-6 sm:p-8 border border-amber-300 relative flex flex-col justify-between shadow-md">
+          <div>
+            <span class="absolute -top-3 right-6 px-3 py-0.5 bg-orange-600 text-white rounded-full text-[10px] font-bold uppercase tracking-wider">
+              ยอดขายปังที่สุด
+            </span>
+            <div class="flex text-amber-400 mb-3">
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            </div>
+            <p class="text-stone-700 text-sm leading-relaxed italic">
+              "สูตรแป้งของที่นี่คือที่สุดครับ กรอบนานจริง ลูกค้าสั่ง Delivery ขี่ไปส่ง 30 นาทียังกรอบกร๊วบอยู่เลย โดยเฉพาะสูตรซอสการ์ลิคเกาหลี ขายดีมากจนต้องขยายสาขาที่ 2 แล้วครับ คุ้มค่าเกินค่าเรียนหลักพันไปไกลมาก"
+            </p>
+          </div>
+          <div class="mt-6 pt-6 border-t border-stone-200 flex items-center gap-3">
+            <img class="w-12 h-12 rounded-full object-cover border-2 border-orange-500" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=150&auto=format&fit=crop&q=80" alt="คุณต้อม">
+            <div>
+              <h4 class="font-bold text-stone-900 text-sm">คุณต้อม วิทวัส</h4>
+              <p class="text-xs text-stone-500">เจ้าของแฟรนไชส์ Crispy Wing กรุงเทพฯ</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="bg-stone-50 rounded-2xl p-6 sm:p-8 border border-stone-200 relative flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-400 mb-3">
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            </div>
+            <p class="text-stone-700 text-sm leading-relaxed italic">
+              "เป็นแม่บ้านอยากหารายได้เสริม เลยทอดขายแถวหมู่บ้านและเปิดเดลิเวอรี่ Grab/Lineman ไฟล์ Excel คำนวณต้นทุนที่แถมมามีประโยชน์มาก ช่วยให้ตั้งราคาถูก ไม่ขาดทุน ตอนนี้มีรายได้เสริมเดือนละ 3-4 หมื่นสบายๆ ค่ะ"
+            </p>
+          </div>
+          <div class="mt-6 pt-6 border-t border-stone-200 flex items-center gap-3">
+            <img class="w-12 h-12 rounded-full object-cover border-2 border-amber-400" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80" alt="คุณเมย์">
+            <div>
+              <h4 class="font-bold text-stone-900 text-sm">คุณเมย์ สุจิตรา</h4>
+              <p class="text-xs text-stone-500">ร้านไก่ทอด Delivery จ.เชียงใหม่</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section: แพ็กเกจการเรียน -->
+  <section id="pricing" class="py-16 md:py-24 bg-stone-100 border-t border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs sm:text-sm font-bold tracking-widest uppercase text-orange-600 mb-2 block">การลงทุนที่คุ้มค่าที่สุดในชีวิต</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-stone-900 heading-font">
+          เลือกแพ็กเกจที่เหมาะกับคุณ
+        </h2>
+        <p class="mt-4 text-stone-600 text-base">
+          ทุกแพ็กเกจจ่ายครั้งเดียว จบ ไม่ต้องจ่ายรายเดือน เรียนได้ตลอดชีพ พร้อมใบรับรอง Certificate
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch max-w-6xl mx-auto">
+        
+        <!-- Tier 1: Starter -->
+        <div class="bg-white rounded-3xl p-8 border border-stone-200 flex flex-col justify-between hover:shadow-xl transition-shadow">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-stone-500">สำหรับทำทานเองในครอบครัว</span>
+            <h3 class="text-2xl font-bold text-stone-900 mt-1">Starter Pack</h3>
+            <p class="text-stone-500 text-xs mt-2">สูตรพื้นฐานและเคล็ดลับความกรอบในรูปแบบ E-Book</p>
+
+            <div class="mt-6 mb-6">
+              <span class="text-stone-400 line-through text-sm">ปกติ ฿1,990</span>
+              <div class="flex items-baseline gap-1 mt-1">
+                <span class="text-4xl font-extrabold heading-font text-stone-900">฿890</span>
+                <span class="text-xs text-stone-500">/ ตลอดชีพ</span>
+              </div>
+            </div>
+
+            <ul class="space-y-3 text-sm text-stone-600">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i> E-Book สูตรแป้งกรอบและน้ำดอง (PDF)</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i> วิดีโอสอนเทคนิคทอดพื้นฐาน 2 บท</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i> สูตรน้ำจิ้มไก่สูตรโบราณ 1 สูตร</li>
+              <li class="flex items-center gap-2 text-stone-400"><i data-lucide="x" class="w-4 h-4 text-stone-300 flex-shrink-0"></i> ไม่มีสูตรซอสเกาหลี 4 รส</li>
+              <li class="flex items-center gap-2 text-stone-400"><i data-lucide="x" class="w-4 h-4 text-stone-300 flex-shrink-0"></i> ไม่มีตาราง Excel คำนวณต้นทุน</li>
+              <li class="flex items-center gap-2 text-stone-400"><i data-lucide="x" class="w-4 h-4 text-stone-300 flex-shrink-0"></i> ไม่มีกลุ่มปิดปรึกษาอาจารย์</li>
+            </ul>
+          </div>
+
+          <div class="mt-8">
+            <button class="btn-open-modal w-full py-3.5 rounded-xl border-2 border-stone-800 text-stone-800 hover:bg-stone-900 hover:text-white font-bold text-sm transition-colors" data-package="starter">
+              เลือกแพ็กเกจนี้
+            </button>
+          </div>
+        </div>
+
+        <!-- Tier 2: Professional (Best Seller) -->
+        <div class="bg-stone-950 text-white rounded-3xl p-8 border-2 border-amber-500 flex flex-col justify-between shadow-2xl relative scale-105 z-10">
+          <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 px-4 py-1 rounded-full bg-gradient-to-r from-orange-500 to-amber-500 text-white text-xs font-bold uppercase tracking-wider shadow-md">
+            🔥 ยอดนิยมสูงสุด (Best Seller)
+          </div>
+
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-amber-400">สำหรับผู้ที่ต้องการเปิดร้านจริงจัง</span>
+            <h3 class="text-2xl font-bold text-white mt-1">Professional Masterclass</h3>
+            <p class="text-stone-300 text-xs mt-2">ครบจบทุกสูตร + การตลาดเปิดร้าน + ปรึกษาได้ตลอดชีพ</p>
+
+            <div class="mt-6 mb-6">
+              <span class="text-stone-400 line-through text-sm">ปกติ ฿5,900</span>
+              <div class="flex items-baseline gap-1 mt-1">
+                <span class="text-4xl font-extrabold heading-font text-amber-400">฿2,490</span>
+                <span class="text-xs text-stone-300">/ ตลอดชีพ</span>
+              </div>
+            </div>
+
+            <ul class="space-y-3 text-sm text-stone-200">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-400 flex-shrink-0"></i> วิดีโอคมชัด Full HD ครบทั้ง 5 โมดูลเต็ม</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-400 flex-shrink-0"></i> สูตรซอสและน้ำจิ้มเคลือบครบทั้ง 4 สูตร</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-400 flex-shrink-0"></i> แจกไฟล์ Excel ช่วยคำนวณต้นทุน & ราคาขาย</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-400 flex-shrink-0"></i> พิกัดแหล่งซื้อวัตถุดิบและอุปกรณ์ราคาขายส่ง</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-400 flex-shrink-0"></i> สิทธิ์เข้ากลุ่มปิด VIP ปรึกษาอาจารย์ตลอดชีพ</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-400 flex-shrink-0"></i> อัปเดตสูตรใหม่ๆ ฟรีตลอดไป</li>
+            </ul>
+          </div>
+
+          <div class="mt-8">
+            <button class="btn-open-modal btn-shimmer w-full py-4 rounded-xl bg-gradient-to-r from-orange-500 via-amber-500 to-orange-600 hover:from-orange-600 hover:to-amber-600 text-white font-bold text-base shadow-xl shadow-orange-500/30 transition-transform" data-package="pro">
+              สมัครแพ็กเกจยอดนิยม ฿2,490
+            </button>
+          </div>
+        </div>
+
+        <!-- Tier 3: VIP Coaching -->
+        <div class="bg-white rounded-3xl p-8 border border-stone-200 flex flex-col justify-between hover:shadow-xl transition-shadow">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-stone-500">สอนจับมือทำแบบเอ็กซ์คลูซีฟ</span>
+            <h3 class="text-2xl font-bold text-stone-900 mt-1">Business VIP Coaching</h3>
+            <p class="text-stone-500 text-xs mt-2">เรียนตัวต่อตัว 1-on-1 พร้อมชุดอุปกรณ์เปิดร้าน</p>
+
+            <div class="mt-6 mb-6">
+              <span class="text-stone-400 line-through text-sm">ปกติ ฿18,900</span>
+              <div class="flex items-baseline gap-1 mt-1">
+                <span class="text-4xl font-extrabold heading-font text-stone-900">฿8,900</span>
+                <span class="text-xs text-stone-500">/ รับเดือนละ 5 ท่าน</span>
+              </div>
+            </div>
+
+            <ul class="space-y-3 text-sm text-stone-600">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i> ได้รับสิทธิ์ทุกอย่างใน Professional Masterclass</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i> นัดเรียนปฏิบัติจริงตัวต่อตัว 1 วันเต็ม (Private)</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i> เทรนเนอร์ช่วยดูทำเลร้านและออกแบบป้ายหน้าร้าน</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i> มอบชุดแป้งและซอสตั้งต้นสำหรับขาย 300 ชิ้นแรก</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600 flex-shrink-0"></i> สายตรงปรึกษาส่วนตัวผ่านโทรศัพท์/LINE ส่วนตัวอาจารย์</li>
+            </ul>
+          </div>
+
+          <div class="mt-8">
+            <button class="btn-open-modal w-full py-3.5 rounded-xl border-2 border-stone-800 text-stone-800 hover:bg-stone-900 hover:text-white font-bold text-sm transition-colors" data-package="vip">
+              จองสิทธิ์ Private Coaching
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section: คำถามที่พบบ่อย -->
+  <section id="faq" class="py-16 md:py-24 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <span class="text-xs sm:text-sm font-bold tracking-widest uppercase text-amber-700 mb-2 block">ไขทุกข้อข้องใจ</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-stone-900 heading-font">
+          คำถามที่พบบ่อย (FAQ)
+        </h2>
+      </div>
+
+      <div class="space-y-4">
+        <!-- Item 1 -->
+        <div class="faq-item border border-stone-200 rounded-2xl overflow-hidden bg-stone-50">
+          <button class="faq-trigger w-full px-6 py-5 text-left font-bold text-stone-900 flex justify-between items-center focus:outline-none">
+            <span class="text-base sm:text-lg">ไม่มีพื้นฐานทำอาหารเลย จะทำขายได้จริงไหม?</span>
+            <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-stone-500 transition-transform duration-300"></i>
+          </button>
+          <div class="faq-answer hidden px-6 pb-5 text-stone-600 text-sm leading-relaxed border-t border-stone-200/60 pt-4 bg-white">
+            ทำได้ 100% ครับ คอร์สนี้ออกแบบมาเพื่อให้ใครก็ตามสามารถทำตามได้ โดยเราบอกสัดส่วนเป็นกรัม เปอร์เซ็นต์ อุณหภูมิ และเวลาที่แน่นอน ไม่ต้องอาศัยการกะด้วยสายตา ลูกศิษย์กว่า 70% ของเราเริ่มต้นจากคนที่ทอดไข่เจียวยังไม่ค่อยสวย แต่ปัจจุบันเปิดร้านขายดีครับ
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="faq-item border border-stone-200 rounded-2xl overflow-hidden bg-stone-50">
+          <button class="faq-trigger w-full px-6 py-5 text-left font-bold text-stone-900 flex justify-between items-center focus:outline-none">
+            <span class="text-base sm:text-lg">ต้องใช้น้ำมันยี่ห้อไหน และลงทุนอุปกรณ์เริ่มต้นแพงไหม?</span>
+            <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-stone-500 transition-transform duration-300"></i>
+          </button>
+          <div class="faq-answer hidden px-6 pb-5 text-stone-600 text-sm leading-relaxed border-t border-stone-200/60 pt-4 bg-white">
+            ในคอร์สมีระบุยี่ห้อและประเภทน้ำมันปาล์มเกรดทอดสำหรับร้านอาหารที่หาซื้อง่ายตาม Makro ทั่วไปครับ สำหรับอุปกรณ์เริ่มต้น หากคุณมีเตาแก๊สหรือกระทะอยู่แล้ว สามารถเริ่มต้นทดลองขายด้วยงบไม่เกิน 2,000 - 3,000 บาทได้เลย ไม่จำเป็นต้องซื้อเตาไฟฟ้าทอดแพงๆ ตั้งแต่วันแรกครับ
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="faq-item border border-stone-200 rounded-2xl overflow-hidden bg-stone-50">
+          <button class="faq-trigger w-full px-6 py-5 text-left font-bold text-stone-900 flex justify-between items-center focus:outline-none">
+            <span class="text-base sm:text-lg">เรียนออนไลน์ ดูซ้ำได้กี่รอบ มีวันหมดอายุไหม?</span>
+            <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-stone-500 transition-transform duration-300"></i>
+          </button>
+          <div class="faq-answer hidden px-6 pb-5 text-stone-600 text-sm leading-relaxed border-t border-stone-200/60 pt-4 bg-white">
+            ไม่มีวันหมดอายุครับ! ดูซ้ำได้ไม่จำกัดจำนวนครั้ง ตลอด 24 ชั่วโมง ผ่านคอมพิวเตอร์ แท็บเล็ต หรือสมาร์ตโฟน และหากมีสูตรใหม่หรือเทคนิคเพิ่มเติม อาจารย์จะอัปเดตคลิปใหม่เข้าในระบบให้ฟรีตลอดไปครับ
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="faq-item border border-stone-200 rounded-2xl overflow-hidden bg-stone-50">
+          <button class="faq-trigger w-full px-6 py-5 text-left font-bold text-stone-900 flex justify-between items-center focus:outline-none">
+            <span class="text-base sm:text-lg">ถ้าทำตามแล้วติดปัญหา หรือทอดแล้วยังไม่ได้รสชาติตามต้องการ ปรึกษาใครได้?</span>
+            <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-stone-500 transition-transform duration-300"></i>
+          </button>
+          <div class="faq-answer hidden px-6 pb-5 text-stone-600 text-sm leading-relaxed border-t border-stone-200/60 pt-4 bg-white">
+            เรามีกลุ่มปิด VIP สำหรับนักเรียนโดยเฉพาะ คุณสามารถถ่ายรูปหรือคลิปวิดีโอตอนผสมแป้ง หรือตอนทอด มาให้อาจารย์และทีมงานช่วยดูและตรวจการบ้านได้ตลอดเวลาครับ เราดูแลจนกว่าคุณจะทำสำเร็จและเปิดร้านได้จริง
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="faq-item border border-stone-200 rounded-2xl overflow-hidden bg-stone-50">
+          <button class="faq-trigger w-full px-6 py-5 text-left font-bold text-stone-900 flex justify-between items-center focus:outline-none">
+            <span class="text-base sm:text-lg">ช่องทางการชำระเงิน และการเริ่มเรียน?</span>
+            <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-stone-500 transition-transform duration-300"></i>
+          </button>
+          <div class="faq-answer hidden px-6 pb-5 text-stone-600 text-sm leading-relaxed border-t border-stone-200/60 pt-4 bg-white">
+            รองรับการโอนผ่านบัญชีธนาคาร, สแกน QR PromptPay, หรือบัตรเครดิต เมื่อแจ้งสลิปการโอนผ่านทาง LINE แล้ว ทีมงานจะดึงเข้ากลุ่มเรียนและส่งคู่มือให้เข้าเรียนได้ทันทีภายใน 5 นาทีครับ
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lead Form & Contact Section -->
+  <section class="py-16 md:py-24 bg-gradient-to-tr from-amber-600 via-orange-600 to-amber-700 text-white relative">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+      <span class="px-3 py-1 bg-white/20 rounded-full text-xs font-bold uppercase tracking-wider">โอกาสทองในการสร้างธุรกิจ</span>
+      <h2 class="text-3xl sm:text-5xl font-black heading-font text-white">
+        พร้อมเปลี่ยนกระทะทอดไก่ <br class="hidden sm:inline">ให้เป็นเครื่องผลิตเงินล้านหรือยัง?
+      </h2>
+      <p class="text-amber-100 max-w-xl mx-auto text-base sm:text-lg">
+        อย่าปล่อยให้ความลังเลขวางกั้นความสำเร็จ ลงทะเบียนรับสิทธิ์โปรโมชั่นลด 50% หรือสอบถามรายละเอียดเพิ่มเติมกับอาจารย์ได้ทันที
+      </p>
+
+      <!-- Quick Lead Form -->
+      <form id="quick-lead-form" class="max-w-md mx-auto pt-4 flex flex-col sm:flex-row gap-3">
+        <input 
+          type="text" 
+          placeholder="กรอกชื่อและเบอร์โทร หรือ LINE ID" 
+          required 
+          class="flex-1 px-4 py-3.5 rounded-xl text-stone-900 focus:outline-none shadow-lg text-sm"
+        >
+        <button type="submit" class="btn-shimmer px-6 py-3.5 rounded-xl bg-stone-950 hover:bg-stone-900 text-white font-bold text-sm shadow-xl whitespace-nowrap">
+          รับสูตรทดลองฟรี
+        </button>
+      </form>
+
+      <div class="pt-6 flex items-center justify-center gap-4 text-xs text-amber-200">
+        <span class="flex items-center gap-1"><i data-lucide="shield-check" class="w-4 h-4"></i> ปลอดภัย ไม่นำข้อมูลไปสแปม</span>
+        <span class="flex items-center gap-1"><i data-lucide="clock" class="w-4 h-4"></i> ตอบกลับภายใน 15 นาที</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-stone-950 text-stone-400 py-12 border-t border-stone-800 text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+        <!-- Col 1 -->
+        <div class="space-y-3">
+          <div class="flex items-center gap-2">
+            <div class="w-8 h-8 rounded-lg bg-orange-500 flex items-center justify-center text-white">
+              <i data-lucide="flame" class="w-5 h-5 fill-current"></i>
+            </div>
+            <span class="text-xl font-bold text-white heading-font">ไก่ทองคำ<span class="text-orange-500">.</span></span>
+          </div>
+          <p class="text-xs text-stone-400 leading-relaxed">
+            สถาบันอบรมสูตรไก่ทอดสร้างอาชีพ มุ่งมั่นถ่ายทอดความรู้ เทคนิค และการทำธุรกิจสตรีทฟู้ดให้คนไทยมีอาชีพที่มั่นคง
+          </p>
+        </div>
+
+        <!-- Col 2 -->
+        <div>
+          <h4 class="text-white font-semibold mb-3">หลักสูตร</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#curriculum" class="hover:text-amber-400">สูตรไก่ทอดหาดใหญ่</a></li>
+            <li><a href="#curriculum" class="hover:text-amber-400">สูตรไก่ทอดสไตล์เกาหลี</a></li>
+            <li><a href="#curriculum" class="hover:text-amber-400">เทคนิคการหมักน้ำดอง</a></li>
+            <li><a href="#calculator" class="hover:text-amber-400">เครื่องคำนวณกำไร</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3 -->
+        <div>
+          <h4 class="text-white font-semibold mb-3">ข้อมูลช่วยเหลือ</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#faq" class="hover:text-amber-400">คำถามที่พบบ่อย (FAQ)</a></li>
+            <li><a href="#testimonials" class="hover:text-amber-400">รีวิวผลงานผู้เรียน</a></li>
+            <li><a href="#pricing" class="hover:text-amber-400">แพ็กเกจราคา</a></li>
+            <li><a href="#" class="hover:text-amber-400">นโยบายความเป็นส่วนตัว</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4 -->
+        <div>
+          <h4 class="text-white font-semibold mb-3">ติดต่อสถาบัน</h4>
+          <p class="text-xs text-stone-400 mb-2">LINE Official: @GoldenCrispAcademy</p>
+          <p class="text-xs text-stone-400 mb-2">โทรศัพท์: 089-XXX-XXXX (สายด่วน)</p>
+          <p class="text-xs text-stone-400">เวลาทำการ: ทุกวัน 08:30 - 20:00 น.</p>
+        </div>
+      </div>
+
+      <div class="pt-8 border-t border-stone-800 text-center text-xs text-stone-500">
+        <p>© 2026 ไก่ทองคำ Academy (GoldenCrisp Masterclass). สงวนลิขสิทธิ์ทุกประการ | Hosted on GitHub Pages</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Enrollment Modal -->
+  <div id="enroll-modal" class="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative border border-amber-200 max-h-[90vh] overflow-y-auto">
+      <button id="btn-close-modal" class="absolute top-5 right-5 text-stone-400 hover:text-stone-700 p-1 rounded-lg">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+
+      <div class="text-center mb-6">
+        <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-600 flex items-center justify-center mx-auto mb-3">
+          <i data-lucide="sparkles" class="w-6 h-6"></i>
+        </div>
+        <h3 class="text-2xl font-bold text-stone-900 heading-font">สมัครเรียนรับสิทธิ์ลด 50%</h3>
+        <p class="text-xs text-stone-500 mt-1">กรอกข้อมูลเพื่อให้เจ้าหน้าที่ติดต่อกลับและส่งรายละเอียดเข้า LINE</p>
+      </div>
+
+      <form id="enroll-form" class="space-y-4">
+        <div>
+          <label class="block text-xs font-semibold text-stone-700 mb-1">เลือกแพ็กเกจที่สนใจ</label>
+          <select id="package-select" class="w-full px-4 py-2.5 rounded-xl border border-stone-300 bg-stone-50 text-stone-900 text-sm focus:outline-none focus:border-amber-500">
+            <option value="starter">Starter Pack (฿890) - E-Book สูตรลับ</option>
+            <option value="pro" selected>Professional Masterclass (฿2,490) - [แนะนำ] วิดีโอเต็ม 5 โมดูล</option>
+            <option value="vip">Business VIP Coaching (฿8,900) - เรียนตัวต่อตัว 1-on-1</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-stone-700 mb-1">ชื่อ - นามสกุล *</label>
+          <input id="student-name" type="text" required placeholder="เช่น คุณสมชาย ชาญชัย" class="w-full px-4 py-2.5 rounded-xl border border-stone-300 text-sm focus:outline-none focus:border-amber-500">
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-stone-700 mb-1">เบอร์โทรศัพท์ติดต่อ *</label>
+          <input type="tel" required placeholder="เช่น 081-234-5678" class="w-full px-4 py-2.5 rounded-xl border border-stone-300 text-sm focus:outline-none focus:border-amber-500">
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-stone-700 mb-1">LINE ID (สำหรับส่งลิงก์เข้าเรียน) *</label>
+          <input type="text" required placeholder="เช่น somchai_friedchicken" class="w-full px-4 py-2.5 rounded-xl border border-stone-300 text-sm focus:outline-none focus:border-amber-500">
+        </div>
+
+        <div class="pt-2">
+          <button type="submit" class="btn-shimmer w-full py-3.5 rounded-xl bg-gradient-to-r from-orange-500 via-amber-500 to-orange-600 text-white font-bold text-sm shadow-lg shadow-orange-500/25 hover:opacity-95 transition-all">
+            ยืนยันการลงทะเบียนรับโปรโมชั่น
+          </button>
+        </div>
+
+        <p class="text-[11px] text-center text-stone-400 mt-2">
+          🔒 เราเคารพความเป็นส่วนตัวของคุณ ข้อมูลจะถูกเก็บเป็นความลับ 100%
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast-notification" class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 pointer-events-none transition-all duration-300 max-w-sm bg-stone-900 text-white px-5 py-4 rounded-2xl shadow-2xl border border-amber-500/40 flex items-center gap-3">
+    <div class="w-8 h-8 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center flex-shrink-0">
+      <i data-lucide="check-circle" class="w-5 h-5"></i>
+    </div>
+    <div id="toast-message" class="text-xs sm:text-sm font-medium leading-snug">
+      ดำเนินการสำเร็จ
+    </div>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="js/app.js"></script>
+</body>
+</html>
